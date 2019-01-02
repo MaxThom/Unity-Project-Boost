@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4503773, g: 0.4981404, b: 0.5631706, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -398,19 +398,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111157680014716, guid: 7b2e071927fb1a941b12ed8c9394253d, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.111702785
+      value: -0.21397372
       objectReference: {fileID: 0}
     - target: {fileID: 4111157680014716, guid: 7b2e071927fb1a941b12ed8c9394253d, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.23890649
+      value: 0.1229694
       objectReference: {fileID: 0}
     - target: {fileID: 4111157680014716, guid: 7b2e071927fb1a941b12ed8c9394253d, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.9198119
+      value: -0.4187491
       objectReference: {fileID: 0}
     - target: {fileID: 4111157680014716, guid: 7b2e071927fb1a941b12ed8c9394253d, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.2905033
+      value: -0.8739239
       objectReference: {fileID: 0}
     - target: {fileID: 4111157680014716, guid: 7b2e071927fb1a941b12ed8c9394253d, type: 2}
       propertyPath: m_RootOrder
@@ -418,15 +418,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111157680014716, guid: 7b2e071927fb1a941b12ed8c9394253d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 158.001
+      value: 151.512
       objectReference: {fileID: 0}
     - target: {fileID: 4111157680014716, guid: 7b2e071927fb1a941b12ed8c9394253d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 158.202
+      value: 177.67
       objectReference: {fileID: 0}
     - target: {fileID: 4111157680014716, guid: 7b2e071927fb1a941b12ed8c9394253d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -39.34198
+      value: -129.388
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b2e071927fb1a941b12ed8c9394253d, type: 2}
