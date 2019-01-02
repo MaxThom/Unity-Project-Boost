@@ -31,6 +31,10 @@ public class Rocket : MonoBehaviour {
                 // Do nothing
                 print("Ok");
                 break;
+            case "Finish":
+                // Do nothing
+                print("Ok");
+                break;
             case "Enemy":
                 print("Dead");
                 break;
