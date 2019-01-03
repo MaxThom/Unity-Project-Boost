@@ -19,6 +19,7 @@ public class Rocket : MonoBehaviour {
 
     enum State { Alive, Dying, Transcending }
     State state = State.Alive;
+    bool isCollisonOn = true;
 
 	// Use this for initialization
 	void Start () {
@@ -44,7 +45,8 @@ public class Rocket : MonoBehaviour {
                 SuccessSequence();
                 break;
             case "Enemy":
-                DeathSequence();
+                if (isCollisonOn)
+                    DeathSequence();
                 break;
             case "Fuel":
                 break;
@@ -85,7 +87,7 @@ public class Rocket : MonoBehaviour {
 
     private void LoadNextScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1 >= SceneManager.sceneCountInBuildSettings ? 0 : SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void ProcessInput()
@@ -95,6 +97,18 @@ public class Rocket : MonoBehaviour {
             RespondToThrustInput();
             RespondToRotateInput();
         }
+
+        if (Debug.isDebugBuild)
+            RespondToDebugKeys();
+    }
+
+    private void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+            isCollisonOn = !isCollisonOn;
+
+        if (Input.GetKeyDown(KeyCode.L))
+            LoadNextScene();
     }
 
     private void RespondToThrustInput()
